@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101510">
+  <meta name="description" content="Gear up, get out there, and elevate your game. Discover performance sportswear made for every move.">
+  <title>Elevate Sports KE — Move With Purpose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">BUILT FOR THE EVERYDAY ATHLETE <span>•</span> DELIVERY ACROSS KENYA</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Elevate Sports KE home"><span class="brand-mark">E<span>+</span></span><span class="brand-name">ELEVATE<span>SPORTS KE</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#why-elevate">Why Elevate</a></nav>
+    <button class="cart-trigger" id="cart-open" aria-label="Open shopping bag">Bag <span id="cart-count">0</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow"><span></span> YOUR NEXT REP STARTS HERE</p><h1>Show up.<br>Stand out.<br><em>Elevate.</em></h1><p class="hero-intro">Performance gear for the early starts, extra reps, and everything that gets you moving.</p><a class="button button-lime" href="#shop">Find your fit <span>↗</span></a><p class="hero-note">MADE FOR MOVEMENT. READY FOR ANY DAY.</p></div>
+      <div class="hero-visual"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=85" alt="Athlete training in a sunlit gym"><div class="hero-stamp"><span>MOVE</span><strong>YOUR<br>WAY</strong><span>NAIROBI · KE</span></div><div class="hero-caption"><span>01 / ALWAYS IN MOTION</span><span>TRAINING · EVERYDAY · YOU</span></div></div>
+      <div class="hero-side-label">ELEVATE YOUR GAME — ELEVATE YOUR GAME —</div>
+    </section>
+
+    <section class="ticker" aria-label="Our promise"><div>MOVE WITH PURPOSE <span>✳</span> MADE FOR YOUR MOMENT <span>✳</span> BUILT TO GO FURTHER <span>✳</span> MOVE WITH PURPOSE <span>✳</span> MADE FOR YOUR MOMENT <span>✳</span></div></section>
+
+    <section class="shop-section section-pad" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE ELEVATE EDIT</p><h2>Gear up. <em>Get out there.</em></h2></div><p>Easy-to-wear essentials for training days, rest days, and all the in-between.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter products"><button class="filter-chip active" data-filter="all">All gear</button><button class="filter-chip" data-filter="tops">Tops</button><button class="filter-chip" data-filter="bottoms">Bottoms</button><button class="filter-chip" data-filter="sets">Sets</button></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="catalog-note">Product names, photos, and prices shown are starter content—update them to match your actual range before launch.</p>
+    </section>
+
+    <section class="manifesto" id="story"><div class="manifesto-image"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=85" alt="Athlete focused on a strength training session"><span class="image-tag">NO SHORTCUTS. JUST SHOWING UP.</span></div><div class="manifesto-copy"><p class="eyebrow">A LITTLE ABOUT US</p><h2>For the ones<br>who <em>keep going.</em></h2><p>We believe sport is bigger than the scoreboard. It is the first step, the comeback, the teammate beside you, and the promise you make to yourself.</p><p>Elevate Sports KE is here to help you feel ready for all of it—with gear that keeps up with the way you move.</p><a href="#why-elevate" class="text-link">What we stand for <span>↗</span></a></div></section>
+
+    <section class="values section-pad" id="why-elevate"><div class="section-heading"><div><p class="eyebrow">THE ELEVATE STANDARD</p><h2>More than <em>the kit.</em></h2></div><p>A good day starts with showing up. We make the rest feel a little easier.</p></div><div class="value-grid"><article><span class="value-number">01</span><span class="value-icon">↗</span><h3>Move freely</h3><p>Comfort-first essentials, designed to move with you through every rep and every plan.</p></article><article><span class="value-number">02</span><span class="value-icon">✳</span><h3>Keep showing up</h3><p>Good gear should work hard, feel good, and earn its place in your everyday rotation.</p></article><article><span class="value-number">03</span><span class="value-icon">◎</span><h3>Made for your pace</h3><p>Your goals, your route, your rhythm. Find what feels right and make it your own.</p></article></div></section>
+
+    <section class="bottom-cta"><p class="eyebrow">YOUR MOVE</p><h2>Ready when <em>you are.</em></h2><a href="#shop" class="button button-dark">Shop the edit <span>↗</span></a><div class="cta-orbit orbit-one"></div><div class="cta-orbit orbit-two"></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="#home"><span class="brand-mark">E<span>+</span></span><span class="brand-name">ELEVATE<span>SPORTS KE</span></span></a><p>Move with purpose. Elevate your game.</p><div class="footer-bottom"><span>© <span id="year"></span> Elevate Sports KE</span><a href="#home">Back to top ↑</a><span>MADE FOR MOVEMENT</span></div></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping bag" aria-modal="true" role="dialog" aria-hidden="true"><div class="cart-heading"><div><p class="eyebrow">YOUR ELEVATE EDIT</p><h2>Your bag <span id="cart-heading-count">(0)</span></h2></div><button class="icon-button" id="cart-close" aria-label="Close shopping bag">✕</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>✳</span><h3>Your bag is taking a breather.</h3><p>Find something that gets you moving.</p><button class="text-link" id="continue-shopping">Explore the edit ↗</button></div><div class="cart-footer" id="cart-footer" hidden><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">KSh 0</strong></div><p>Delivery details and final costs can be confirmed when you order.</p><button class="button button-lime checkout-button" id="checkout">Order via WhatsApp <span>↗</span></button><span class="checkout-hint" id="checkout-hint"></span></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
