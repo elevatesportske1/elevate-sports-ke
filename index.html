@@ -1,52 +1,150 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101510">
-  <meta name="description" content="Gear up, get out there, and elevate your game. Discover performance sportswear made for every move.">
-  <title>Elevate Sports KE — Move With Purpose</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="Elevating Kenyan Football Stars. Athlete brand development and affordable sports gear for players, coaches, gyms and teams.">
+<title>Elevate Sports KE | Sport for Everyone</title>
+<style>
+:root{--ink:#101827;--lime:#c7f36b;--paper:#f6f8f5;--muted:#64748b;--line:#e5e7eb;--green:#1d8b55}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+.top{background:var(--ink);color:white;text-align:center;padding:9px 12px;font-size:11px;letter-spacing:.08em}
+header{background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}.nav{max-width:1120px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:20px;font-weight:950;letter-spacing:-.8px}.brand small{display:block;font-size:9px;letter-spacing:.19em;color:#71972d}
+.navlinks{display:flex;align-items:center;gap:17px;font-size:12px}.bag,.primary{border:0;border-radius:30px;padding:12px 17px;font-weight:850;background:var(--lime);color:var(--ink)}
+.hero{max-width:1120px;margin:25px auto;padding:0 20px}.hero-in{border-radius:22px;background:var(--ink);color:white;display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;min-height:380px;box-shadow: 0 10px 30px rgba(0,0,0,0.1);}
+.hero-copy{padding:42px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;position:relative;z-index:2;background:linear-gradient(90deg, #101827 60%, rgba(16,24,39,0.8) 100%)}.eyebrow{font-size:10px;letter-spacing:.18em;color:var(--lime);font-weight:900}
+h1{font-size:clamp(39px,5.5vw,65px);line-height:.96;letter-spacing:-3px;margin:16px 0}.hero p{max-width:490px;color:#cbd5e1;font-size:14px;line-height:1.65}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.secondary{border:1px solid #607080;background:transparent;color:white;border-radius:30px;padding:12px 17px;font-weight:800}
+.hero-art{background:url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop') center/cover no-repeat; position:relative;}
+.hero-art::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, #101827 0%, transparent 40%);}
+.wrap{max-width:1120px;margin:42px auto;padding:0 20px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap}h2{font-size:27px;letter-spacing:-1px;margin:0}.muted{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5}
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.proof div{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px;font-size:12px}.proof b{display:block;margin-bottom:4px}.proof span{color:var(--muted);font-size:11px;line-height:1.5}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:18px}.offer{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column}.offer .emoji{font-size:29px}.offer h3{font-size:16px;margin:9px 0 5px}.offer p{font-size:11px;color:var(--muted);line-height:1.55;min-height:48px}.offer button{margin-top:auto;background:var(--ink);color:white;border:0;border-radius:9px;padding:11px;font-size:11px;font-weight:850}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:17px 0}.filter{border:1px solid var(--line);background:white;border-radius:25px;padding:9px 13px;font-size:11px}.filter.active{background:var(--ink);color:white}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.product{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 4px 15px rgba(0,0,0,0.03);transition:transform 0.2s}
+.product:hover{transform:translateY(-3px)}
+.photo{height:180px;background-size:cover;background-position:center}
+.pbody{padding:14px;display:flex;flex-direction:column;flex:1}.tag{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#6b8d2c;font-weight:900}.pbody h3{font-size:14px;margin:7px 0 5px}.desc{font-size:11px;color:var(--muted);line-height:1.5;min-height:34px}.price{font-size:12px;font-weight:900;margin:10px 0}.price small{font-weight:500;color:var(--muted);font-size:9px}.pactions{display:flex;gap:7px;margin-top:auto}.pactions button{flex:1;border:0;border-radius:8px;padding:10px;font-size:10px;font-weight:850}.ask{background:var(--lime)}.add{background:#edf1f5}
+.callout{margin-top:16px;background:#eef4e6;border:1px solid #dce9c8;color:#40552c;padding:14px 16px;border-radius:12px;font-size:11px;line-height:1.6}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:17px}.step{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px;font-size:12px}.step b{display:block;margin:7px 0}.step span{font-size:11px;color:var(--muted);line-height:1.5}
+.team{background:var(--ink);color:white;border-radius:18px;padding:25px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.team p{font-size:12px;line-height:1.6;color:#cbd5e1;max-width:620px}
+.athlete-section{background:linear-gradient(135deg, #1d8b55, #101827);color:white;border-radius:18px;padding:25px;margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.athlete-section h2{color:white}
+.athlete-section p{font-size:13px;line-height:1.7;color:#e2e8f0}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.faq details{background:white;border:1px solid var(--line);border-radius:11px;padding:13px;font-size:12px}.faq p{font-size:11px;line-height:1.5;color:var(--muted)}
+footer{background:var(--ink);color:white;margin-top:50px;padding:30px 20px}.foot{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot p{max-width:490px;color:#aeb9c7;font-size:11px;line-height:1.6}
+.overlay{display:none;position:fixed;inset:0;background:#07101dcc;z-index:10;justify-content:flex-end}.overlay.open{display:flex}.drawer{background:white;width:min(430px,100%);height:100%;padding:20px;display:flex;flex-direction:column}.drawer-head{display:flex;justify-content:space-between;align-items:center}.close{border:0;border-radius:50%;padding:8px 12px}.items{flex:1;overflow:auto;margin:14px 0}.item{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:12px}.qty{display:flex;gap:8px;align-items:center;margin-top:7px}.qty button{border:1px solid var(--line);background:white;border-radius:5px}.checkout{border:0;border-radius:10px;background:var(--green);color:white;padding:14px;font-weight:900;width:100%}.fine{font-size:10px;color:var(--muted);line-height:1.5}.toast{display:none;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:11px 17px;border-radius:25px;z-index:12;font-size:11px}
+@media(max-width:720px){.hero-in{grid-template-columns:1fr}.hero-copy{padding:30px 25px;background:linear-gradient(0deg, #101827 60%, rgba(16,24,39,0.8) 100%);}.hero-art{min-height:250px}.products,.offer-grid{grid-template-columns:repeat(2,1fr)}.proof,.steps{grid-template-columns:1fr}.team{grid-template-columns:1fr}.faq{grid-template-columns:1fr}.navlinks a{display:none}.athlete-section{grid-template-columns:1fr}}
+@media(max-width:390px){.products,.offer-grid{grid-template-columns:1fr}.photo{height:200px}}
+</style>
 </head>
 <body>
-  <div class="announcement">BUILT FOR THE EVERYDAY ATHLETE <span>•</span> DELIVERY ACROSS KENYA</div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Elevate Sports KE home"><span class="brand-mark">E<span>+</span></span><span class="brand-name">ELEVATE<span>SPORTS KE</span></span></a>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#why-elevate">Why Elevate</a></nav>
-    <button class="cart-trigger" id="cart-open" aria-label="Open shopping bag">Bag <span id="cart-count">0</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></button>
-  </header>
+<div class="top">ATHLETE BRAND DEVELOPMENT • SPORTS RETAIL • KENYA</div>
+<header><nav class="nav">
+<a href="#" aria-label="Elevate Sports KE home"><div class="brand">ELEVATE SPORTS KE<small>SPORT FOR EVERYONE. PERFORMANCE FOR ALL.</small></div></a>
+<div class="navlinks"><a href="#shop">Shop gear</a><a href="#athletes">Athletes</a><button class="bag" onclick="openCart()">Kit bag (<span id="count">0</span>)</button></div>
+</nav></header>
+<main>
+<section class="hero"><div class="hero-in">
+<div class="hero-copy"><div class="eyebrow">ELEVATING KENYAN FOOTBALL STARS</div>
+<h1>Gear up.<br>Play higher.</h1>
+<p>We build athlete brands and supply affordable, reliable sports essentials for grassroots players, competitive athletes, coaches, and gyms across Kenya.</p>
+<div class="hero-actions"><button class="primary" onclick="document.querySelector('#shop').scrollIntoView()">Shop Equipment →</button><button class="secondary" onclick="whatsapp('Hi Elevate Sports KE. I would like to enquire about athlete brand development.')">Athlete Enquiries</button></div>
+</div><div class="hero-art"></div>
+</div></section>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy"><p class="eyebrow"><span></span> YOUR NEXT REP STARTS HERE</p><h1>Show up.<br>Stand out.<br><em>Elevate.</em></h1><p class="hero-intro">Performance gear for the early starts, extra reps, and everything that gets you moving.</p><a class="button button-lime" href="#shop">Find your fit <span>↗</span></a><p class="hero-note">MADE FOR MOVEMENT. READY FOR ANY DAY.</p></div>
-      <div class="hero-visual"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=85" alt="Athlete training in a sunlit gym"><div class="hero-stamp"><span>MOVE</span><strong>YOUR<br>WAY</strong><span>NAIROBI · KE</span></div><div class="hero-caption"><span>01 / ALWAYS IN MOTION</span><span>TRAINING · EVERYDAY · YOU</span></div></div>
-      <div class="hero-side-label">ELEVATE YOUR GAME — ELEVATE YOUR GAME —</div>
-    </section>
+<section class="wrap">
+<div class="proof">
+<div>🏆 <b>Building Careers</b><span>Elevating athletes on and off the pitch through commercial partnerships.</span></div>
+<div>🤝 <b>Ask Before You Pay</b><span>We confirm availability, final price and delivery before you commit.</span></div>
+<div>⚽ <b>Grassroots to Elite</b><span>Reliable options for individual players, coaches, gyms and teams.</span></div>
+</div>
+</section>
 
-    <section class="ticker" aria-label="Our promise"><div>MOVE WITH PURPOSE <span>✳</span> MADE FOR YOUR MOMENT <span>✳</span> BUILT TO GO FURTHER <span>✳</span> MOVE WITH PURPOSE <span>✳</span> MADE FOR YOUR MOMENT <span>✳</span></div></section>
+<section class="wrap">
+<div class="athlete-section">
+<div>
+<div class="eyebrow" style="color:#c7f36b">OUR FLAGSHIP ATHLETE</div>
+<h2>Building the Michael Karamor Brand</h2>
+<p>We connect athletes with businesses through tailored commercial partnerships and brand development. Michael Karamor (Nairobi United) represents the next generation of Kenyan football talent.</p>
+</div>
+<div style="text-align:center;">
+<button class="primary" onclick="whatsapp('Hi Elevate Sports KE. I am an athlete/brand interested in working with you.')">Partner With Our Athletes</button>
+</div>
+</div>
+</section>
 
-    <section class="shop-section section-pad" id="shop">
-      <div class="section-heading"><div><p class="eyebrow">THE ELEVATE EDIT</p><h2>Gear up. <em>Get out there.</em></h2></div><p>Easy-to-wear essentials for training days, rest days, and all the in-between.</p></div>
-      <div class="filter-row" role="group" aria-label="Filter products"><button class="filter-chip active" data-filter="all">All gear</button><button class="filter-chip" data-filter="tops">Tops</button><button class="filter-chip" data-filter="bottoms">Bottoms</button><button class="filter-chip" data-filter="sets">Sets</button></div>
-      <div class="product-grid" id="product-grid" aria-live="polite"></div>
-      <p class="catalog-note">Product names, photos, and prices shown are starter content—update them to match your actual range before launch.</p>
-    </section>
+<section class="wrap" id="shop">
+<div class="section-head"><div><h2>Shop the essentials</h2><div class="muted">Start with useful, accessible gear. Tap enquire to check the exact item, size and price.</div></div></div>
+<div class="filters">
+<button class="filter active" onclick="filter('All',this)">All gear</button>
+<button class="filter" onclick="filter('Gym',this)">Gym Essentials</button>
+<button class="filter" onclick="filter('Training',this)">Club Volume</button>
+<button class="filter" onclick="filter('Teamwear',this)">Custom Teamwear</button>
+<button class="filter" onclick="filter('Football',this)">Football Gear</button>
+</div>
+<div class="products" id="products"></div>
+<div class="callout"><b>Honest ordering (Pre-order model):</b> We source on request. You pay nothing just to enquire. We confirm the exact model, size, supplier availability, total price and delivery charge before you pay.</div>
+</section>
 
-    <section class="manifesto" id="story"><div class="manifesto-image"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=85" alt="Athlete focused on a strength training session"><span class="image-tag">NO SHORTCUTS. JUST SHOWING UP.</span></div><div class="manifesto-copy"><p class="eyebrow">A LITTLE ABOUT US</p><h2>For the ones<br>who <em>keep going.</em></h2><p>We believe sport is bigger than the scoreboard. It is the first step, the comeback, the teammate beside you, and the promise you make to yourself.</p><p>Elevate Sports KE is here to help you feel ready for all of it—with gear that keeps up with the way you move.</p><a href="#why-elevate" class="text-link">What we stand for <span>↗</span></a></div></section>
+<section class="wrap">
+<h2>Popular starter requests</h2><div class="muted">Quick enquiry bundles to help customers tell us what they need. Final contents and quote are confirmed with you.</div>
+<div class="offer-grid">
+<div class="offer"><div class="emoji">💪</div><h3>Gym Starter Pack</h3><p>Ask for resistance bands, skipping rope, and gym gloves at an affordable combined price.</p><button onclick="bundle('Gym Starter Pack','resistance bands, skipping rope and gym gloves')">Get a gym-pack quote</button></div>
+<div class="offer"><div class="emoji">🧢</div><h3>Coach's Training Pack</h3><p>Ask for cones, marker discs, bibs, and a pump for your next training session.</p><button onclick="bundle('Coach Training Pack','cones, marker discs, bibs and ball pump')">Get a coach-pack quote</button></div>
+<div class="offer"><div class="emoji">🥅</div><h3>Custom Teamwear</h3><p>Need custom kits for your club or school? Get a quote based on your squad size.</p><button onclick="bundle('Custom Teamwear','custom designed jerseys and shorts for my team')">Get a teamwear quote</button></div>
+</div>
+</section>
 
-    <section class="values section-pad" id="why-elevate"><div class="section-heading"><div><p class="eyebrow">THE ELEVATE STANDARD</p><h2>More than <em>the kit.</em></h2></div><p>A good day starts with showing up. We make the rest feel a little easier.</p></div><div class="value-grid"><article><span class="value-number">01</span><span class="value-icon">↗</span><h3>Move freely</h3><p>Comfort-first essentials, designed to move with you through every rep and every plan.</p></article><article><span class="value-number">02</span><span class="value-icon">✳</span><h3>Keep showing up</h3><p>Good gear should work hard, feel good, and earn its place in your everyday rotation.</p></article><article><span class="value-number">03</span><span class="value-icon">◎</span><h3>Made for your pace</h3><p>Your goals, your route, your rhythm. Find what feels right and make it your own.</p></article></div></section>
+<section class="wrap" id="teams"><div class="team"><div><div class="eyebrow">FOR CLUBS, SCHOOLS & ACADEMIES</div><h2 style="margin-top:8px">Equip the whole squad.</h2><p>Need match kits, training wear, balls, bibs, cones or bulk accessories? Send your team size, items and deadline. We'll help you request a clear quote before you commit.</p></div><button class="primary" onclick="whatsapp('Hello Elevate Sports KE. I need a quote for my team/academy. Please help me with teamwear and training equipment.')">Request team quote</button></div></section>
 
-    <section class="bottom-cta"><p class="eyebrow">YOUR MOVE</p><h2>Ready when <em>you are.</em></h2><a href="#shop" class="button button-dark">Shop the edit <span>↗</span></a><div class="cta-orbit orbit-one"></div><div class="cta-orbit orbit-two"></div></section>
-  </main>
+<section class="wrap"><h2>How ordering works</h2><div class="steps">
+<div class="step">01 <b>Choose or ask</b><span>Pick a product or tell us your sport, budget, size and quantity.</span></div>
+<div class="step">02 <b>We confirm</b><span>We check supplier availability, specifications, final price and delivery.</span></div>
+<div class="step">03 <b>You decide</b><span>If you approve the quote, we agree on payment and fulfilment. No pressure to buy.</span></div>
+</div>
+<div class="faq">
+<details><summary>Do you have stock ready?</summary><p>We operate a supplier-confirmed, order-on-request model. We confirm availability before taking payment.</p></details>
+<details><summary>Can I order just one item?</summary><p>Yes. Ask about individual items. Some custom teamwear or bulk products may have supplier minimum quantities.</p></details>
+<details><summary>Can I get a team or academy quote?</summary><p>Yes. Share the items, sizes, quantities and deadline for a tailored quotation.</p></details>
+<details><summary>Where do you deliver?</summary><p>Ask us to confirm delivery availability and cost for your location before paying.</p></details>
+</div>
+</section>
+</main>
+<footer><div class="foot"><div><div class="brand">ELEVATE SPORTS KE<small style="color:var(--lime)">SPORT FOR EVERYONE. PERFORMANCE FOR ALL.</small></div><p>Elevating Kenyan athletes and providing affordable sports essentials for the people who make the game happen — players, coaches, teams, gyms and active families.</p></div><div><b style="font-size:12px">Let's get you equipped.</b><p>WhatsApp enquiries are answered with availability, a clear quote and delivery details before payment.<br>© <span id="year"></span> Elevate Sports KE</p></div></div></footer>
 
-  <footer class="site-footer"><a class="brand brand-footer" href="#home"><span class="brand-mark">E<span>+</span></span><span class="brand-name">ELEVATE<span>SPORTS KE</span></span></a><p>Move with purpose. Elevate your game.</p><div class="footer-bottom"><span>© <span id="year"></span> Elevate Sports KE</span><a href="#home">Back to top ↑</a><span>MADE FOR MOVEMENT</span></div></footer>
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeCart()"><aside class="drawer">
+<div class="drawer-head"><h2>Your kit bag</h2><button class="close" onclick="closeCart()">✕</button></div>
+<div class="items" id="items"></div><div><div style="display:flex;justify-content:space-between;font-weight:900;margin-bottom:12px"><span>Estimated subtotal</span><span id="total">KSh 0</span></div><button class="checkout" onclick="checkout()">Send enquiry on WhatsApp</button><p class="fine">Estimate only. We confirm stock, final price and delivery before payment.</p></div>
+</aside></div><div class="toast" id="toast"></div>
 
-  <div class="overlay" id="overlay" hidden></div>
-  <aside class="cart-panel" id="cart-panel" aria-label="Shopping bag" aria-modal="true" role="dialog" aria-hidden="true"><div class="cart-heading"><div><p class="eyebrow">YOUR ELEVATE EDIT</p><h2>Your bag <span id="cart-heading-count">(0)</span></h2></div><button class="icon-button" id="cart-close" aria-label="Close shopping bag">✕</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>✳</span><h3>Your bag is taking a breather.</h3><p>Find something that gets you moving.</p><button class="text-link" id="continue-shopping">Explore the edit ↗</button></div><div class="cart-footer" id="cart-footer" hidden><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">KSh 0</strong></div><p>Delivery details and final costs can be confirmed when you order.</p><button class="button button-lime checkout-button" id="checkout">Order via WhatsApp <span>↗</span></button><span class="checkout-hint" id="checkout-hint"></span></div></aside>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
-</html>
+<script>
+const WHATSAPP_NUMBER='254714353751'; 
+const products=[
+{id:1,name:'Skipping Rope',cat:'Gym',price:650,img:'https://images.unsplash.com/photo-1434682881908-b43d0467b798?q=80&w=600&auto=format&fit=crop',tag:'Conditioning',desc:'Simple, effective conditioning for home or gym.'},
+{id:2,name:'Resistance Bands',cat:'Gym',price:1200,img:'https://images.unsplash.com/photo-1598289431512-b97b0917affc?q=80&w=600&auto=format&fit=crop',tag:'Strength',desc:'Ask for resistance levels and set contents.'},
+{id:3,name:'Training Cones',cat:'Training',price:850,img:'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=600&auto=format&fit=crop',tag:'Coach\'s kit',desc:'Essential for drills. Ask for pack quantities.'},
+{id:4,name:'Training Bibs',cat:'Training',price:1800,img:'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=600&auto=format&fit=crop',tag:'Team sessions',desc:'Ask for colours, pack sizes and team quantities.'},
+{id:5,name:'Custom Teamwear',cat:'Teamwear',price:2500,img:'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop',tag:'Teams & schools',desc:'Ask for design, printing, sizes and minimums.'},
+{id:6,name:'Football Boots',cat:'Football',price:3500,img:'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=600&auto=format&fit=crop',tag:'Matchday',desc:'Tell us your shoe size and playing surface.'},
+{id:7,name:'Football Fan Jersey',cat:'Football',price:1800,img:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=600&auto=format&fit=crop',tag:'Fanwear',desc:'Ask for club, national-team and fan jersey options.'},
+{id:8,name:'Training Ball',cat:'Football',price:1600,img:'https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?q=80&w=600&auto=format&fit=crop',tag:'Player essential',desc:'Ask about size, construction and surface suitability.'}
+];
+let cart={};const money=n=>'KSh '+n.toLocaleString('en-KE');
+function render(cat='All'){const root=document.getElementById('products');root.innerHTML='';products.filter(p=>cat==='All'||p.cat===cat).forEach(p=>{const e=document.createElement('article');e.className='product';e.innerHTML=`<div class="photo" style="background-image:url('${p.img}')" aria-label="${p.name}"></div><div class="pbody"><div class="tag">${p.tag}</div><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">Est. ${money(p.price)} <small>· confirm by enquiry</small></div><div class="pactions"><button class="ask" onclick="ask(${p.id})">Check price & stock</button><button class="add" onclick="add(${p.id})">Add</button></div></div>`;root.appendChild(e)})}
+function filter(c,b){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(c)}
+function whatsapp(msg){window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank')}
+function ask(id){const p=products.find(x=>x.id===id);whatsapp('Hello Elevate Sports KE. I am interested in '+p.name+'. My size/quantity is: ____. My location is: ____. Please confirm available options, final price and delivery.')}
+function bundle(name,items){whatsapp('Hello Elevate Sports KE. Please quote me for the '+name+'. Suggested items: '+items+'. My budget is: KSh ____. My location is: ____. Please confirm availability and total delivered price.')}
+function add(id){cart[id]=(cart[id]||0)+1;update();toast('Added to your kit bag')}
+function change(id,n){cart[id]=(cart[id]||0)+n;if(cart[id]<=0)delete cart[id];update()}
+function update(){const count=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById('count').textContent=count;const root=document.getElementById('items');root.innerHTML='';let total=0;if(!count)root.innerHTML='<p class="fine">Your kit bag is empty. Add an item or enquire directly.</p>';Object.entries(cart).forEach(([id,q])=>{const p=products.find(x=>x.id==id);total+=p.price*q;const e=document.createElement('div');e.className='item';e.innerHTML=`<div><b>${p.name}</b><div class="fine">Estimate ${money(p.price)} each</div><div class="qty"><button onclick="change(${id},-1)">−</button><span>${q}</span><button onclick="change(${id},1)">+</button></div></div><b>${money(p.price*q)}</b>`;root.appendChild(e)});document.getElementById('total').textContent=money(total)}
+function openCart(){update();document.getElementById('overlay').classList.add('open')}function closeCart(){document.getElementById('overlay').classList.remove('open')}
+function checkout(){if(!Object.keys(cart).length){toast('Your kit bag is empty');return}const lines=Object.entries(cart).map(([id,q])=>{const p=products.find(x=>x.id==id);return q+' x '+p.name+' (estimate '+money(p.price)+' each)'});whatsapp('Hello Elevate Sports KE. Please confirm availability and quote for:\n'+lines.join('\n')+'\nPlease include delivery to: ____')}
+function toast(s){const t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2800)}
+document.getElementById('year').textContent=new Date().getFullYear();render();update();
+</script>
+</body></html>
