@@ -9,7 +9,7 @@ Open `index.html` in a browser, or serve this folder with any static web server.
 ## Before launch
 
 - Replace the demo products, KSh prices, product copy, and Unsplash images in `script.js` with the actual catalog. The product content is illustrative, not confirmed inventory.
-- Set `WHATSAPP_NUMBER` in `script.js` to the business WhatsApp number in international format without `+` or spaces (for example, `2547XXXXXXXX`). Until configured, checkout displays a setup reminder.
+- Set `WHATSAPP_NUMBER` in `script.js` to the business WhatsApp number in international format without `+` or spaces (for example, `254714353751`). Until configured, checkout displays a setup reminder.
 - Confirm delivery options, fees, sizing, returns, and payment details with the business and add them to the customer-facing copy.
 - The included Google Fonts and Unsplash photos are loaded externally; replace or self-host assets if preferred.
 
