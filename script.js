@@ -6,7 +6,7 @@ const products = [
   { id: 'run-club-tee', name: 'Run Club Essential Tee', category: 'tops', categoryLabel: 'RUN & RECOVER', price: 1900, badge: 'CUSTOMER FAVOURITE', image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80', alt: 'Lightweight everyday sports t-shirt' }
 ];
 // Add the business WhatsApp number with country code only, e.g. '2547XXXXXXXX'. Leave blank until confirmed.
-const WHATSAPP_NUMBER = '25414353751';
+const WHATSAPP_NUMBER = '254714353751';
 const money = amount => `KSh ${amount.toLocaleString('en-KE')}`;
 let cart = JSON.parse(localStorage.getItem('elevate-cart') || '[]');
 let toastTimer;
